@@ -1,0 +1,302 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #44404D;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #1E1E2A;
+        padding: 15px 0;
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#about {
+    text-align: center;
+}
+#about h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #797993;
+}
+#about p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.8;
+}
+section {
+    padding: 80px 20px;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin-left: 25px;
+}
+
+.nav-links a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover{
+    color: #797993;
+}
+#home {
+    background-color: #302E3B;
+    padding: 120px 0px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+      max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #797993;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hero-text .button {
+    display: inline-block;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #797993;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 25px;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #302E3B;
+}
+.skill-card{
+     background-color: #48485B;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 320px;
+}
+    .projects-container {
+     display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;}
+
+
+.projectcard{
+     background-color: #48485B;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+        width: 320px;
+
+}
+
+.skill-card:hover{
+    background-color: #797993;
+}
+.projectcard:hover{
+    background-color: #797993;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #44404D;
+    color: #FFFFFF;
+}
+
+th {
+    background-color: #1E1E2A;
+    color: #FFFFFF;
+    padding: 12px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #797993;
+}
+
+tr:hover {
+    background-color: #48485B;
+}
+footer{
+    background-color: #1E1E2A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    color: #797993;
+    text-decoration: none;
+}
+.sociallinks {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sociallinks a {
+    color: #797993;
+    text-decoration: none;
+}
+
+.sociallinks a:hover {
+    color: white;
+}
+@media (max-width: 992px) {
+    section{
+        padding: 60px 5%;
+    }
+    #home {
+        padding: 8% 15px;
+    }
+       .hero-text {
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin: 0 auto 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        width: 220px;
+    }
+
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  header {
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .skill-card,
+    .projectcard {
+        width: 90%;
+    }
+
+   nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .nav-links {
+         flex-direction: column;
+    align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+}
